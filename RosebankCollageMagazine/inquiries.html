@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquiries | Rosebank College Magazine</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      document.getElementById("thankYouMessage").style.display = "block";
+      document.getElementById("inquiryForm").reset();
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="IMAGES/logo.webp" alt="Rosebank Logo" class="logo">
+    <h1>Rosebank College Magazine</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="creative.html">Creative</a></li>
+        <li><a href="interviews.html">Interviews</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="inquiries.html" class="active">Inquiries</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inquiries-section">
+      <article
+      <h1>Contact & Inquiries</h1>
+      <p>If you have any questions, feedback, or would like to contribute to the magazine, please fill out the form below, or get in touch with us using the contact information provided.</p>
+      </article>
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> <a href="mailto:info@rosebankcollege.co.za">info@rosebankcollege.co.za</a></p>
+        <p><strong>Phone:</strong> +27 11 555 1234</p>
+        <p><strong>Address:</strong> Rosebank College, 123 College Street, Rosebank, Johannesburg, South Africa</p>
+        <p><strong>Business Hours:</strong> Mon - Fri: 9:00 AM - 5:00 PM</p>
+      </div>
+
+      <!-- Inquiry Form -->
+      <div class="inquiry-form">
+        <form id="inquiryForm" onsubmit="submitForm(event)">
+          <h2>Submit an Inquiry</h2>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Submit Inquiry</button>
+        </form>
+
+        <p id="thankYouMessage" style="display:none; color:green; font-weight:bold; margin-top:15px;">
+          Thank you for your inquiry! We’ll get back to you soon.
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>What is the best way to contribute to the magazine?</h3>
+          <p>We welcome submissions in various forms such as articles, photographs, and artwork. Please use the inquiry form above to submit your contributions or email us directly.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How can I advertise with the magazine?</h3>
+          <p>If you're interested in advertising with us, please reach out using the inquiry form or email us at <a href="mailto:ads@rosebankcollege.co.za">ads@rosebankcollege.co.za</a>.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I subscribe to the magazine?</h3>
+          <p>Subscriptions are available online. Please visit our <a href="subscribe.html">subscription page</a> to get started.</p>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="map-section">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=...YourGoogleMapsLink..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rosebank College Magazine | Designed by Mc Donald Shabangu</p>
+    <div class="social-links">
+      <a href="https://facebook.com/RosebankCollege" target="_blank">Facebook</a>
+      <a href="https://twitter.com/RosebankCollege" target="_blank">Twitter</a>
+      <a href="https://instagram.com/RosebankCollege" target="_blank">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
